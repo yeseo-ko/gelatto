@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>index</title>
     <link rel="stylesheet" href="/gelatto/css/style.css">
+    <link rel="stylesheet" href="/gelatto/css/slick.css">
+    <script src="/js/jquery-1.11.3.js"></script>
+    <script src="/gelatto/js/slick.js"></script>
+    
 </head>
 <body>
     <header>
@@ -23,30 +27,30 @@
                 <h1><img src="/gelatto/image/logo.png" alt="로고"></h1>
                 <nav>                                          
                     <ul class="menu_list">
-                        <li><a href="#">추천</a></li>
-                        <li><a href="#">NEW</a></li>
-                        <li><a href="#">BEST</a></li>
-                        <li><a href="#">붙이는네일</a></li>
-                        <li><a href="#">붙이는패디</a></li>
-                        <li><a href="#">세트</a></li>
-                        <li><a href="#">네일툴&케어</a></li>
+                        <li><a href="#null">추천</a></li>
+                        <li><a href="#null">NEW</a></li>
+                        <li><a href="#null">BEST</a></li>
+                        <li><a href="#null">붙이는네일</a></li>
+                        <li><a href="#null">붙이는패디</a></li>
+                        <li><a href="#null">세트</a></li>
+                        <li><a href="#null">네일툴&케어</a></li>
                     </ul>
                 </nav>
                 <ol>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">마이페이지</a></li>
-                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#null">로그인</a></li>
+                    <li><a href="#null">회원가입</a></li>
+                    <li><a href="#null">마이페이지</a></li>
+                    <li><a href="#null">공지사항</a></li>
                 </ol>
                 <ul class="convinience">
-                    <li><a href="#"><span><img src="/gelatto/image/hd01_search.png" alt="검색"></span></a></li>
+                    <li><a href="#null"><span><img src="/gelatto/image/hd01_search.png" alt="검색"></span></a></li>
                     <li class="cart">
-                        <!-- <a href="#"><img src="/gelatto/image/hd02_bag.png" alt="장바구니"> -->
-                        <a href="#">
+                        <!-- <a href="#null"><img src="/gelatto/image/hd02_bag.png" alt="장바구니"> -->
+                        <a href="#null">
                             <span class="cart_icon">0</span>
                         </a>
                     </li>
-                    <li><a href="#"><img src="/gelatto/image/hd03_lang.png" alt="언어지원"></a></li>
+                    <li><a href="#null"><img src="/gelatto/image/hd03_lang.png" alt="언어지원"></a></li>
                 </ul>
             </div>
             
@@ -58,22 +62,32 @@
         <div class="main">
             <div class="main_list">
                 <div class="main_bg">
-                    <a href="#" style="background:url(/gelatto/image/main_rolling.png) no-repeat center"></a>
+                    <a href="#null" style="background:url(/gelatto/image/main_rolling.png) no-repeat center"></a>
+                </div>
+                <div class="main_bg">
+                    <a href="#null" style="background:url(/gelatto/image/main_rolling2.png) no-repeat center"></a>
+                </div>
+                <div class="main_bg">
+                    <a href="#null" style="background:url(/gelatto/image/main_rolling3.png) no-repeat center"></a>
                 </div>
             </div>
             <!-- 롤링 버튼 -->
-            <button class="main_left"><img src="/gelatto/image/left_main.png"></button>
-            <button class="main_right"><img src="/gelatto/image/right_main.png"></button>
-            <!-- 롤링 원형 -->
-            <div class="main_circle">
-                <ol>
-                    <li><span class="on"></span></li>
-                    <li><span></span></li>
-                    <li><span></span></li>
-                    <li><span></span></li>
-                </ol>
-            </div>
+            <button class="main_left slick-prev"><img src="/gelatto/image/left_main.png"></button>
+            <button class="main_right slick-next"><img src="/gelatto/image/right_main.png"></button>
+            
         </div>
+        <script>
+        $(function(){
+            $('.main_list').slick({            
+                slidesToShow: 1,
+                autoplay: true,
+                autoplaySpeed:2000,
+                dots: true,
+                prevArrow:$(".main_left"),
+                nextArrow:$(".main_right")
+            });
+        });
+        </script>
         <!--몸통영역  -->
         
         <!-- 1.신상품 -->
@@ -81,14 +95,14 @@
             <h2>NEW</h2>
             <div class="product_all">
                 <div class="pro_bt">
-                    <button class="pro_left"><img src="/gelatto/image/body_left.png" alt=""></button>
-                    <button class="pro_right"><img src="/gelatto/image/body_right.png" alt=""></button>
+                    <button class="pro_left newjs_bt_l slick-prev"><img src="/gelatto/image/body_left.png" alt=""></button>
+                    <button class="pro_right newjs_bt_r slick-next"><img src="/gelatto/image/body_right.png" alt=""></button>
                 </div>
-                <div class="area_all">
+                <div class="area_all newjs" style="display: block;">
                     <ol>
                         <li class="new1">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/new_1.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/new_1.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>무광시크 가을찰떡룩의 완성</p>
@@ -103,7 +117,7 @@
                         </li>
                         <li class="new2">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/new_2.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/new_2.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>벽돌을 갈아 넣었다</p>
@@ -118,7 +132,7 @@
                         </li>
                         <li  class="new3">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/new_3.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/new_3.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>내 마음은 단순해~</p>
@@ -133,7 +147,37 @@
                         </li>
                         <li  class="new4">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/new_4.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/new_4.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>손끝에 피어난 예쁜 정원</p>
+                                <hr>
+                                <strong><a href="">감성정원</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li  class="new3">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/new_3.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>내 마음은 단순해~</p>
+                                <hr>
+                                <strong><a href="">심플 드로잉 하트</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li  class="new4">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/new_4.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>손끝에 피어난 예쁜 정원</p>
@@ -149,27 +193,34 @@
                     </ol>
                 </div>
             </div>
+            <script>
+                $(function(){
+                   $('.newjs ol').slick({            
+                    slidesToShow: 4,        
+                    slidesToSilde: 1,
+                     prevArrow:$(".newjs_bt_l"),
+                     nextArrow:$(".newjs_bt_r")
+                     });
+                });
+            </script>
         </section>
           
         <!-- 2.베스트 -->
         <section class="product best">
             <h2>BEST</h2>
             <ul class="sort">                
-                <li class="on"><a href="#">네일팁</a></li>
-                <li><a href="#">네일스티커</a></li>
-                <li><a href="#">패디팁</a></li>
-                <li><a href="#">패디스티커</a></li>                
+                <li class="on" data-tab="sort1"><a href="#null">네일팁</a></li>
+                <li data-tab="sort2"><a href="#null">네일스티커</a></li>
+                <li data-tab="sort3"><a href="#null">패디팁</a></li>
+                <li data-tab="sort4"><a href="#null">패디스티커</a></li>                
             </ul>
+
             <div class="product_all">
-                <div class="pro_bt">
-                    <button class="pro_left"><img src="/gelatto/image/body_left.png" alt=""></button>
-                    <button class="pro_right"><img src="/gelatto/image/body_right.png" alt=""></button>
-                </div>
-                <div class="area_all">
+                <div id="sort1" class="area_all" style="display: block;">
                     <ol>
                         <li class="best1">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/best_1.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/best_1.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>반짝박짝 화이트실버조합</p>
@@ -184,7 +235,7 @@
                         </li>
                         <li class="best2">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/best_2.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/best_2.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>포근달달한 포도에 앉은 나비</p>
@@ -199,7 +250,7 @@
                         </li>
                         <li class="best3">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/best_3.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/best_3.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>진정한 가을 무드</p>
@@ -214,7 +265,7 @@
                         </li>
                         <li class="best4">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/best_4.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/best_4.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>달달한 솜사탕 핑크 시럽</p>
@@ -227,15 +278,379 @@
                                 <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
                             </div>
                         </li>
+                        <li class="best2">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_2.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>포근달달한 포도에 앉은 나비</p>
+                                <hr>
+                                <strong><a href="">드리미 퍼플</a></strong>
+                                <p>8,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_2.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best3">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_3.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>진정한 가을 무드</p>
+                                <hr>
+                                <strong><a href="">오커 브라운</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best2">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_2.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>포근달달한 포도에 앉은 나비</p>
+                                <hr>
+                                <strong><a href="">드리미 퍼플</a></strong>
+                                <p>8,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_2.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best3">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_3.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>진정한 가을 무드</p>
+                                <hr>
+                                <strong><a href="">오커 브라운</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
                     </ol>
+                </div>
+                <div id="sort2" class="area_all">
+                    <ol>
+                        <li class="best1">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_1.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>반짝박짝 화이트실버조합</p>
+                                <hr>
+                                <strong><a href="">홀로스타그램</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best2">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_2.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>포근달달한 포도에 앉은 나비</p>
+                                <hr>
+                                <strong><a href="">드리미 퍼플</a></strong>
+                                <p>8,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_2.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best3">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_3.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>진정한 가을 무드</p>
+                                <hr>
+                                <strong><a href="">오커 브라운</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best4">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_4.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>달달한 솜사탕 핑크 시럽</p>
+                                <hr>
+                                <strong><a href="">클리어 핑크</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best2">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_2.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>포근달달한 포도에 앉은 나비</p>
+                                <hr>
+                                <strong><a href="">드리미 퍼플</a></strong>
+                                <p>8,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_2.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best3">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_3.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>진정한 가을 무드</p>
+                                <hr>
+                                <strong><a href="">오커 브라운</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                    </ol>
+                </div>  
+                <div id="sort3" class="area_all">
+                    <ol>
+                        <li class="best1">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_1.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>반짝박짝 화이트실버조합</p>
+                                <hr>
+                                <strong><a href="">홀로스타그램</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best2">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_2.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>포근달달한 포도에 앉은 나비</p>
+                                <hr>
+                                <strong><a href="">드리미 퍼플</a></strong>
+                                <p>8,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_2.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best3">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_3.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>진정한 가을 무드</p>
+                                <hr>
+                                <strong><a href="">오커 브라운</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best4">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_4.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>달달한 솜사탕 핑크 시럽</p>
+                                <hr>
+                                <strong><a href="">클리어 핑크</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best2">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_2.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>포근달달한 포도에 앉은 나비</p>
+                                <hr>
+                                <strong><a href="">드리미 퍼플</a></strong>
+                                <p>8,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_2.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best3">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_3.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>진정한 가을 무드</p>
+                                <hr>
+                                <strong><a href="">오커 브라운</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                    </ol>
+                </div>  
+                
+                <div id="sort4" class="area_all">
+                    <ol>
+                        <li class="best1">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_1.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>반짝박짝 화이트실버조합</p>
+                                <hr>
+                                <strong><a href="">홀로스타그램</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best2">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_2.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>포근달달한 포도에 앉은 나비</p>
+                                <hr>
+                                <strong><a href="">드리미 퍼플</a></strong>
+                                <p>8,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_2.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best3">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_3.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>진정한 가을 무드</p>
+                                <hr>
+                                <strong><a href="">오커 브라운</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best4">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_4.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>달달한 솜사탕 핑크 시럽</p>
+                                <hr>
+                                <strong><a href="">클리어 핑크</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best2">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_2.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>포근달달한 포도에 앉은 나비</p>
+                                <hr>
+                                <strong><a href="">드리미 퍼플</a></strong>
+                                <p>8,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_2.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="best3">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/best_3.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>진정한 가을 무드</p>
+                                <hr>
+                                <strong><a href="">오커 브라운</a></strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_1.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                    </ol>
+                </div>                
+                <div class="pro_bt">
+                    <button class="pro_left slick-prev"><img src="/gelatto/image/body_left.png" alt=""></button>
+                    <button class="pro_right slick-next"><img src="/gelatto/image/body_right.png" alt=""></button>
                 </div>
             </div>
         </section>
+        <script>
+            $(function(){
+                $(".best ul li").click(function(){
+                    $(".best ul li").removeClass("on");
+                    $(this).addClass("on");
+                    var tabs=$(this).data("tab");
+                    $(".area_all").hide();
+                    $("#"+tabs).show(100);
+                });
+                //     $('.area_all ol').slick({            
+                //         slidesToShow: 4,        
+                //         slidesToSilde: 1,
+                //         prevArrow:$(".pro_left"),
+                //         nextArrow:$(".pro_right")
+                //     });
+            });
+        </script>
         <!-- 3.중간띠배너 -->
         <div class="mid_tie">
             <div class="tie_cont">
                 <span>Autumn new products</span>
-                <p><a href="#"><u>더보기</u></a></p>
+                <p><a href="#null"><u>더보기</u></a></p>
             </div>
         </div>
         <!-- 4.네일케어&툴 -->
@@ -243,14 +658,14 @@
             <h2>NAIL CARE & TOOL</h2>
             <div class="product_all">
                 <div class="pro_bt">
-                    <button class="pro_left"><img src="/gelatto/image/body_left.png" alt=""></button>
-                    <button class="pro_right"><img src="/gelatto/image/body_right.png" alt=""></button>
+                    <button class="pro_left tools_bt_l slick-prev"><img src="/gelatto/image/body_left.png" alt=""></button>
+                    <button class="pro_right tools_bt_r slick-next"><img src="/gelatto/image/body_right.png" alt=""></button>
                 </div>
-                <div class="area_all">
+                <div class="area_all tools" style="display: block;">
                     <ol>
                         <li class="care1">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/care_1.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/care_1.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>자극없이 순하게 지우자!</p>
@@ -265,7 +680,7 @@
                         </li>
                         <li class="care2">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/care_2.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/care_2.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>손톱도 피부야~</p>
@@ -280,7 +695,7 @@
                         </li>
                         <li class="care3">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/care_3.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/care_3.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>영원한 손끝의 비결!</p>
@@ -295,7 +710,37 @@
                         </li>
                         <li class="care4">
                             <div class="img">
-                                <a href="#"><img src="/gelatto/image/care_4.png" alt=""></a>
+                                <a href="#null"><img src="/gelatto/image/care_4.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>갓성비 甲!</p>
+                                <hr>
+                                <strong>굽굽 젤램프</strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_4.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>
+                        </li>
+                        <li class="care3">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/care_3.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <p>영원한 손끝의 비결!</p>
+                                <hr>
+                                <strong>롱롱 젤탑</strong>
+                                <p>9,900<span>원</span></p>
+                            </div>
+                            <div class="sticker">
+                                <span><img class="tag" src="/gelatto/image/ribbon_4.png" alt="상품종류"></span>
+                                <button><img src="/gelatto/image/cart.png" alt="장바구니"></button>
+                            </div>    
+                        </li>
+                        <li class="care4">
+                            <div class="img">
+                                <a href="#null"><img src="/gelatto/image/care_4.png" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>갓성비 甲!</p>
@@ -313,13 +758,23 @@
             </div>
         </section>   
 
+        <script>
+            $(function(){
+               $('.tools ol').slick({            
+                slidesToShow: 4,        
+                slidesToSilde: 1,
+                 prevArrow:$(".tools_bt_l"),
+                 nextArrow:$(".tools_bt_r")
+                 });
+            });
+        </script>
         <!-- 5.서브배너 2종 -->
         <section class="sub_1">
             <div class="wedding">
-                <a href="#"><img src="/gelatto/image/sub_wedding.png" alt="웨딩네일"></a>
+                <a href="#null"><img src="/gelatto/image/sub_wedding.png" alt="웨딩네일"></a>
             </div>
             <div class="daily">
-                <a href="#"><img src="/gelatto/image/sub_monthly.png" alt="월간하또픽"></a>
+                <a href="#null"><img src="/gelatto/image/sub_monthly.png" alt="월간하또픽"></a>
             </div>
         </section>
 
@@ -338,11 +793,11 @@
         <div class="sns">
             <div class="sns_center">
                 <ul>
-                    <li><a href="#"><img src="/gelatto/image/sns1.png" alt="페이스북"></a></li>
-                    <li><a href="#"><img src="/gelatto/image/sns2.png" alt="인스타그램"></a></li>
-                    <li><a href="#"><img src="/gelatto/image/sns3.png" alt="네이버포스트"></a></li>
-                    <li><a href="#"><img src="/gelatto/image/sns4.png" alt="트위터"></a></li>
-                    <li><a href="#"><img src="/gelatto/image/sns5.png" alt="유튜브"></a></li>
+                    <li><a href="#null"><img src="/gelatto/image/sns1.png" alt="페이스북"></a></li>
+                    <li><a href="#null"><img src="/gelatto/image/sns2.png" alt="인스타그램"></a></li>
+                    <li><a href="#null"><img src="/gelatto/image/sns3.png" alt="네이버포스트"></a></li>
+                    <li><a href="#null"><img src="/gelatto/image/sns4.png" alt="트위터"></a></li>
+                    <li><a href="#null"><img src="/gelatto/image/sns5.png" alt="유튜브"></a></li>
                 </ul>
             </div>
             
@@ -382,7 +837,7 @@
                             서울특별시 강남구 테헤란로114길 38<br> 
                             동일타워 4층 (주)젤라또팩토리 앞
                         </p>
-                        <p><a href="#">주문/조회 바로가기 >></a></p>
+                        <p><a href="#null">주문/조회 바로가기 >></a></p>
                     </div>
                 </div>
 
@@ -391,9 +846,9 @@
                     <div class="text">
                         <b>COMMUNITY</b>
                         <ul>
-                            <li><a href="#">NOTICE</a></li>
-                            <li><a href="#">Q&A</a></li>
-                            <li><a href="#">REVIEW</a></li>
+                            <li><a href="#null">NOTICE</a></li>
+                            <li><a href="#null">Q&A</a></li>
+                            <li><a href="#null">REVIEW</a></li>
                         </ul>
                     </div>
                 </div>
@@ -407,10 +862,10 @@
                 </strong>
                 <div class="copy_contents">
                     <ul>
-                        <li><a href="#">이용안내</a></li>
-                        <li><a href="#">개인정보처리방침</a></li>
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#">광고/제휴문의</a></li>
+                        <li><a href="#null">이용안내</a></li>
+                        <li><a href="#null">개인정보처리방침</a></li>
+                        <li><a href="#null">이용약관</a></li>
+                        <li><a href="#null">광고/제휴문의</a></li>
                     </ul>
                     <div class="copy_text">
                         <p><b>주식회사 젤라또랩</b>  서울특별시 강남구 테헤란로114길 38 (동일타워) 4층<br>
