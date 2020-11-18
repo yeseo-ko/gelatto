@@ -37,62 +37,81 @@ button{background: none;border: none;margin:0;padding: 0;}
               transform: translate(0,-50%);}   
 
 /* 메뉴-네비 */
-.white{width: 100%;height: 96px;
-      /* border-bottom:1px #838383 solid ; */
+.white{width: 100%;
+      height: 96px;
       box-shadow:1px 1px 3px 1px #cccccc;
       overflow: hidden;
       position: relative;}
 .fixed{position: fixed;top: 0;background: #fff;z-index: 101;}
 
 /* 로고 */
-.white .menu h1{float: left;height: 96px;}
-.menu h1 img{position: relative;
-              top: 50%;
-              transform: translate(0,-50%);}
+.white .menu h1{
+      float: left;
+      height: 96px;}
+.menu h1 img{
+      position: relative;
+      top: 50%;
+      transform: translate(0,-50%);
+}
 /* 네비 */
-.menu{width: 1612px;
+.menu{
+      width: 1612px;
       height:96px;
       margin: 0 auto;
-      overflow: hidden;}
-.menu .menu_list{float: left;margin-left: 80px;}
-.menu .menu_list li{float: left;
-                    padding: 0 30px;
-                    line-height: 96px;
-                    font-size: 18px;}
+      overflow: hidden;
+}
+.menu .menu_list{
+      float: left;
+      margin-left: 80px;
+}
+.menu .menu_list li{
+      float: left;
+      padding: 0 30px;
+      line-height: 96px;
+      font-size: 18px;
+}
 /* 로그인-회원가입 등 */
-.menu ol{float:left;margin: 0 40px;}
-.menu ol li{float:left;
-            padding: 0 14px;
-            line-height: 96px;} 
+.menu ol{
+      float:left;
+      margin: 0 40px;}
+.menu ol li{
+      float:left;
+      padding: 0 14px;
+      line-height: 96px;
+} 
 
 /* 검색-장바구니-언어 */
-.menu .convinience{float: right;
-                  position: relative;
-                  top: 50%;
-                  transform: translate(0,-50%);
-                  
-                  }
+.menu .convinience{
+      float: right;
+      position: relative;
+      top: 50%;
+      transform: translate(0,-50%);
+}
 
-.menu .convinience li{float: left;
-                      padding: 0 14px;
-                      height: 36px;
-                        }
+.menu .convinience li{
+      float: left;
+      padding: 0 14px;
+      height: 36px;
+}
 .menu .convinience li:first-child span{
-                                          position: relative;display: block;
-                                          top: 50%;
-                                          transform: translate(0,-50%)}
+      position: relative;
+      display: block;
+      top: 50%;
+      transform: translate(0,-50%)}
 .menu .convinience li:last-child a{
-                                    position: relative;display: block;
-                                    top: 50%;
-                                    transform: translate(0,-50%)}
+      position: relative;
+      display: block;
+      top: 50%;
+      transform: translate(0,-50%)}
 
 .cart{position: relative;}
-.cart a{display: block;
+.cart a{
+      display: block;
       background: url('/gelatto/image/hd02_bag.png') no-repeat 0 0px;
-      width: 32px;height: 36px;
+      width: 32px;
+      height: 36px;
       }              
 .cart_icon{
-      
       position: absolute;
       top:20px ;
       right: 12px;
@@ -106,14 +125,20 @@ button{background: none;border: none;margin:0;padding: 0;}
       text-align: center;}
 
 /* 메인롤링 */
-.main{width: 100%;height: 562px;
-      position: relative;}
-.main_bg a{display: block;height: 562px;}
+.main{
+      position: relative;
+      width: 100%;
+      height: 562px;
+      }
+.main_bg a{
+      display: block;
+      height: 562px;}
 /* 롤링버튼 */
-.main .main_left, .main .main_right{position: absolute;
-            top: 50%;
-            transform: translate(0,-50%);
-            cursor: pointer;}
+.main .main_left, .main .main_right{
+      position: absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+      cursor: pointer;}
 .main_left{left: 40px;}
 .main_right{right: 40px;}
 
@@ -210,12 +235,14 @@ button{background: none;border: none;margin:0;padding: 0;}
 
 
 /* 베스트 네비게이션 */
+
 .best .sort{
             width:1194px;
             height:100px;
             overflow: hidden;
             margin:0 auto;
-            font-size:18px;text-align: center;
+            font-size:18px;
+            text-align: center;
             }
 
 .best .sort li {
@@ -382,3 +409,5 @@ button{background: none;border: none;margin:0;padding: 0;}
 .copy .copy_contents .copy_text p{
       float: left;
       padding: 0 0 14px 0;}
+
+      

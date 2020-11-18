@@ -95,8 +95,12 @@
             <h2>NEW</h2>
             <div class="product_all">
                 <div class="pro_bt">
-                    <button class="pro_left newjs_bt_l slick-prev"><img src="/gelatto/image/body_left.png" alt=""></button>
-                    <button class="pro_right newjs_bt_r slick-next"><img src="/gelatto/image/body_right.png" alt=""></button>
+                    <button class="pro_left newjs_bt_l slick-prev">
+                        <img src="/gelatto/image/body_left.png" alt="">
+                    </button>
+                    <button class="pro_right newjs_bt_r slick-next">
+                        <img src="/gelatto/image/body_right.png" alt="">
+                    </button>
                 </div>
                 <div class="area_all newjs" style="display: block;">
                     <ol>
@@ -216,7 +220,7 @@
             </ul>
 
             <div class="product_all">
-                <div id="sort1" class="area_all" style="display: block;">
+                <div id="sort1" class="area_all best_ol" style="display: block;">
                     <ol>
                         <li class="best1">
                             <div class="img">
@@ -340,7 +344,7 @@
                         </li>
                     </ol>
                 </div>
-                <div id="sort2" class="area_all">
+                <div id="sort2" class="area_all best_ol">
                     <ol>
                         <li class="best1">
                             <div class="img">
@@ -434,7 +438,7 @@
                         </li>
                     </ol>
                 </div>  
-                <div id="sort3" class="area_all">
+                <div id="sort3" class="area_all best_ol">
                     <ol>
                         <li class="best1">
                             <div class="img">
@@ -527,9 +531,8 @@
                             </div>
                         </li>
                     </ol>
-                </div>  
-                
-                <div id="sort4" class="area_all">
+                </div>                  
+                <div id="sort4" class="area_all best_ol">
                     <ol>
                         <li class="best1">
                             <div class="img">
@@ -622,11 +625,7 @@
                             </div>
                         </li>
                     </ol>
-                </div>                
-                <div class="pro_bt">
-                    <button class="pro_left slick-prev"><img src="/gelatto/image/body_left.png" alt=""></button>
-                    <button class="pro_right slick-next"><img src="/gelatto/image/body_right.png" alt=""></button>
-                </div>
+                </div>    
             </div>
         </section>
         <script>
@@ -635,15 +634,12 @@
                     $(".best ul li").removeClass("on");
                     $(this).addClass("on");
                     var tabs=$(this).data("tab");
-                    $(".area_all").hide();
+                    $(".best_ol").hide();
                     $("#"+tabs).show(100);
+
+                    
                 });
-                //     $('.area_all ol').slick({            
-                //         slidesToShow: 4,        
-                //         slidesToSilde: 1,
-                //         prevArrow:$(".pro_left"),
-                //         nextArrow:$(".pro_right")
-                //     });
+                 
             });
         </script>
         <!-- 3.중간띠배너 -->
