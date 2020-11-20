@@ -17,8 +17,16 @@
             <!-- 상단팝업메뉴 -->            
             <div class="pop">
                 <p>지금 가입하면 즉시 <b>2,000원 할인쿠폰</b> 발급!</p>
-                <span><img src="/gelatto/image/X.png" alt=""></span>
+                <a href="#null"><img src="/gelatto/image/X.png" alt="close"></a>
             </div>
+            <script>
+                $(function(){
+                    $('.pop a').click(function(){
+                    $('.top').hide();   
+                });
+            });
+                 
+            </script>
         </div>
         <!-- 메뉴네비게이션 -->
         <div class="white"> 
@@ -208,7 +216,6 @@
                 });
             </script>
         </section>
-          
         <!-- 2.베스트 -->
         <section class="product best">
             <h2>BEST</h2>
