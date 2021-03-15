@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="/gelatto/css/style.css">
     <link rel="stylesheet" href="/gelatto/css/slick.css">
     <link rel="shortcut icon" href="/gelatto/image/favi.png">
-    <script src="/js/jquery-1.11.3.js"></script>
-    <script src="/gelatto/js/slick.js"></script>
-    
 </head>
 <body>
     <header>
@@ -20,14 +17,7 @@
                 <p>지금 가입하면 즉시 <b>2,000원 할인쿠폰</b> 발급!</p>
                 <a href="#null"><img src="/gelatto/image/X.png" alt="close"></a>
             </div>
-            <script>
-                $(function(){
-                    $('.pop a').click(function(){
-                    $('.top').hide();   
-                });
-            });
-                 
-            </script>
+            
         </div>
         <!-- 메뉴네비게이션 -->
         <div class="white"> 
@@ -85,18 +75,7 @@
             <button class="main_right slick-next"><img src="/gelatto/image/right_main.png"></button>
             
         </div>
-        <script>
-        $(function(){
-            $('.main_list').slick({            
-                slidesToShow: 1,
-                autoplay: true,
-                autoplaySpeed:2000,
-                dots: true,
-                prevArrow:$(".main_left"),
-                nextArrow:$(".main_right")
-            });
-        });
-        </script>
+        
         <!--몸통영역  -->
         
         <!-- 1.신상품 -->
@@ -206,16 +185,7 @@
                     </ol>
                 </div>
             </div>
-            <script>
-                $(function(){
-                   $('.newjs ol').slick({            
-                    slidesToShow: 4,        
-                    slidesToSilde: 1,
-                     prevArrow:$(".newjs_bt_l"),
-                     nextArrow:$(".newjs_bt_r")
-                     });
-                });
-            </script>
+            
         </section>
         <!-- 2.베스트 -->
         <section class="product best">
@@ -636,20 +606,7 @@
                 </div>    
             </div>
         </section>
-        <script>
-            $(function(){
-                $(".best ul li").click(function(){
-                    $(".best ul li").removeClass("on");
-                    $(this).addClass("on");
-                    var tabs=$(this).data("tab");
-                    $(".best_ol").hide();
-                    $("#"+tabs).show(100);
-
-                    
-                });
-                 
-            });
-        </script>
+        
         <!-- 3.중간띠배너 -->
         <div class="mid_tie">
             <div class="tie_cont">
@@ -762,16 +719,7 @@
             </div>
         </section>   
 
-        <script>
-            $(function(){
-               $('.tools ol').slick({            
-                slidesToShow: 4,        
-                slidesToSilde: 1,
-                 prevArrow:$(".tools_bt_l"),
-                 nextArrow:$(".tools_bt_r")
-                 });
-            });
-        </script>
+        
         <!-- 5.서브배너 2종 -->
         <section class="sub_1">
             <div class="wedding">
@@ -882,5 +830,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="/js/jquery-1.11.3.js"></script>
+    <script src="/gelatto/js/slick.js"></script>
+    <script src="/js/custom.js"></script>
+
 </body>
 </html>
