@@ -1,4 +1,4 @@
-
+$(document).ready(function () {
 // 상단팝업
 
     $(function(){
@@ -61,3 +61,6 @@
                  nextArrow:$(".tools_bt_r")
                  });
             });
+
+
+});
