@@ -1,8 +1,9 @@
+$(document).ready(function () {
 // 상단팝업
 
-                $(function(){
-                    $('.pop a').click(function(){
-                    $('.top').hide();   
+    $(function(){
+     $('.pop a').click(function(){
+    $('.top').hide();   
                 });
             });
                  
@@ -60,3 +61,6 @@
                  nextArrow:$(".tools_bt_r")
                  });
             });
+
+
+});
