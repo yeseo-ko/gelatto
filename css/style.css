@@ -169,7 +169,7 @@ button{background: none;border: none;margin:0;padding: 0;}
                   height: 12px;
                   border-radius: 50%;
                   background: #bfbfbf;
-                  font-size:0
+                  font-size:0;
                   }
 
 .slick-dots li.slick-active button{background: #d0a6fa;}
